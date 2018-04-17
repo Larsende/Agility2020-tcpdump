@@ -40,5 +40,3 @@ tcpdump -s
 ----------
 
 Use 'tcpdump -s0' to capture the full data packet.  The number following the 's' indicates the number of bits to capture of each packet.  0 indicates all.
-
-

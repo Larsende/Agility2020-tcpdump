@@ -16,14 +16,14 @@
   <!-- F5 metadata -->
   <meta name="kb_doc_type" content="Manual"/>
   <meta name="kb_doc_type" content="User Guide"/>
-  <meta name="title" content="Troubleshoot with tcpdump and Wireshark"/>
+  <meta name="title" content="Install the F5 Wireshark Plugin by doing the following"/>
   <meta name="product" content="Agility2018-TCPdump"/>
   <meta name="version" content=".01"/>
   <meta name="updated_date"  content="None"/>
   <meta name="archived" content="Archived documents excluded"/>
 
   
-    <title>Troubleshoot with tcpdump and Wireshark</title>
+    <title>Install the F5 Wireshark Plugin by doing the following</title>
   
   
   <link href="https://cdn.f5.com/favicon.ico" rel="icon">
@@ -44,7 +44,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Troubleshoot with tcpdump and Wireshark &#8212; Troubleshooting with tcpdump and Wireshark Plugin Documentation</title>
+    <title>Install the F5 Wireshark Plugin by doing the following &#8212; Troubleshooting with tcpdump and Wireshark Plugin Documentation</title>
     <link rel="stylesheet" href="_static/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/css/bootstrap.min.css" type="text/css" />
@@ -58,7 +58,8 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="tcpdump switches" href="switches.html" />
+    <link rel="next" title="Configuring/Using Wireshark F5 Plugin" href="wireshark-config.html" />
+    <link rel="prev" title="F5 Specific tcpdump Switches" href="f5-tcpdump-options.html" />
   </head><body>
   <div class="container-fluid">
   <div class="row corp-header">
@@ -239,7 +240,7 @@
         <h5>Current Page</h5>
         <span class="nav-sidebartoc">
             <ul>
-<li><a class="reference internal" href="#">Troubleshoot with tcpdump and Wireshark</a></li>
+<li><a class="reference internal" href="#">Install the F5 Wireshark Plugin by doing the following</a></li>
 </ul>
 
          </span>
@@ -247,11 +248,11 @@
         <h5>Site Contents</h5>
         <span class="nav-sidebartoc">
             <p class="caption"><span class="caption-text">Switches</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="switches.html">tcpdump switches</a></li>
 <li class="toctree-l1"><a class="reference internal" href="filters.html">tcpdump Filters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="f5-tcpdump-options.html">F5 Specific tcpdump Switches</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install.html">Install the F5 Wireshark Plugin by doing the following</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Install the F5 Wireshark Plugin by doing the following</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireshark-config.html">Configuring/Using Wireshark F5 Plugin</a></li>
 </ul>
 
@@ -268,39 +269,29 @@
     <article class="docs-container site-article-inner">
             <nav class="site-breadcrumb-nav site-nav">
           <ul class="site-breadcrumb-list">
-            <li class="breadcrumb-item"><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>&#x20 <a href="./">CloudDocs Home</a> &gt; <a href="#">Agility2018-TCPdump </a> &gt; Troubleshoot with tcpdump and Wireshark</li>
+            <li class="breadcrumb-item"><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>&#x20 <a href="./">CloudDocs Home</a> &gt; <a href="index.html">Agility2018-TCPdump </a> &gt; Install the F5 Wireshark Plugin by doing the following</li>
           </ul>
       </nav>
       
       
       
     
-  <div class="section" id="troubleshoot-with-tcpdump-and-wireshark">
-<h1>Troubleshoot with tcpdump and Wireshark<a class="headerlink" href="#troubleshoot-with-tcpdump-and-wireshark" title="Permalink to this headline">¶</a></h1>
-<p>Welcome to the troubleshoot with tcpdump and Wireshark documentation.</p>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Switches</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="switches.html">tcpdump switches</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-d">tcpdump -D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-i">tcpdump -i</a></li>
-<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-n">tcpdump -n</a></li>
-<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-nn">tcpdump -nn</a></li>
-<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-x">tcpdump -X</a></li>
-<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-w">tcpdump -w</a></li>
-<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-s">tcpdump -s</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="filters.html">tcpdump Filters</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="filters.html#host-filters">Host Filters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="filters.html#port-filters">Port Filters</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="f5-tcpdump-options.html">F5 Specific tcpdump Switches</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install.html">Install the F5 Wireshark Plugin by doing the following</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wireshark-config.html">Configuring/Using Wireshark F5 Plugin</a></li>
-</ul>
-</div>
+  <div class="section" id="install-the-f5-wireshark-plugin-by-doing-the-following">
+<h1>Install the F5 Wireshark Plugin by doing the following<a class="headerlink" href="#install-the-f5-wireshark-plugin-by-doing-the-following" title="Permalink to this headline">¶</a></h1>
+<p>Wireshark version 2.2.14 is installed on the jumpbox.</p>
+<ol class="arabic simple">
+<li>Start Wireshark by double clicking the shortcut on the desktop.</li>
+<li>Click on Help and then About Wireshark.</li>
+<li>Click on the plugins tab and check to see what directory the plugins are installed to.</li>
+<li>Open the plugin directory in file explorer.</li>
+<li>Copy the F5 wireshark plugin that has been copied to C:F5_Labwireshark-plugin.f5ethtrailer.bin.1.11b from: https://devcentral.f5.com/d/wireshark-plugin?lc=1.
+A. The jumpbox client is Windows 32 bit.
+B. Open the Win32-2.2.0 folder and copy the f5ethtrailer.dll to the plugin directory determined in step 3.
+C. Depending on your OS and Wireshark version, you will need the correct plugin files from the correct folder.</li>
+<li>Shutdwon Wireshark and restart it.</li>
+<li>Click on Help and then About Wireshark.</li>
+<li>Check the plugins tab again and make sure the F5 plugin is installed.</li>
+</ol>
 </div>
 
 
@@ -309,8 +300,10 @@
      <div class="row next-prev-btn-row">
        <div class="col-lg-12">
        
+        <a href="f5-tcpdump-options.html" title="F5 Specific tcpdump Switches" accesskey="p" class="btn btn-primary pull-left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
        
-          <a href="switches.html" title="tcpdump switches" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+       
+          <a href="wireshark-config.html" title="Configuring/Using Wireshark F5 Plugin" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
        
      </div>
      </div>

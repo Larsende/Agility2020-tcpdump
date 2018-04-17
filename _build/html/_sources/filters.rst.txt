@@ -27,4 +27,3 @@ This will capture traffic being sourced from port 1055.
 
 tcpdump dst port 443
 This will capture traffic destined for port 443.
-
