@@ -13,4 +13,5 @@ Welcome to the troubleshoot with tcpdump and Wireshark documentation.
    filters
    f5-tcpdump-options
    install
+   captures
    wireshark-config
