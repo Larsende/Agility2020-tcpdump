@@ -13,9 +13,9 @@ Let's take the information we have gathered so far and take a packet capture fro
 
 5.4. Now take the destination address and compose a tcpdump command to track the traffic coming to this virtual server:
 
-     5.4.1. tcpdump -nni 0.0:nnn -s0 -w/var/tmp/hackazon.pcap host 10.128.10.200
+     5.4.1. tcpdump -nni 0.0:nnn -s0 -w/var/tmp/hackazon.pcap host 10.1.10.201
 
-5.5. After starting the capture, start Chrome and click on the Hackazon bookmark.  Browse around the site following a couple links.  Then stop the capture by using Ctrl+c.
+5.5. After starting the capture, start Chrome and click on the Hackazon bookmark.  Browse around the site following a couple links.  Next go to the address bar and type in: "https://hackazon.f5demo.com:8080".  Then stop the capture in the putty session by using 'Ctrl+c'.
 
 5.6. Now start WinSCP from the quick launch bar.
 

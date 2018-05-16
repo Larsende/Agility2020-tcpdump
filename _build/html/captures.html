@@ -58,7 +58,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Configuring/Using Wireshark F5 Plugin" href="wireshark-config.html" />
+    <link rel="next" title="6. Configuring/Using Wireshark F5 Plugin" href="wireshark-config.html" />
     <link rel="prev" title="4. Install the F5 Wireshark Plugin" href="install.html" />
   </head><body>
   <div class="container-fluid">
@@ -249,12 +249,15 @@
         <span class="nav-sidebartoc">
             <p class="caption"><span class="caption-text">Switches</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="switches.html">1. tcpdump switches</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switches.html">1. tcpdump Switches</a></li>
 <li class="toctree-l1"><a class="reference internal" href="filters.html">2. tcpdump Filters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="f5-tcpdump-options.html">3. F5 Specific tcpdump Switches</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">4. Install the F5 Wireshark Plugin</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">5. Taking a Capture from the F5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wireshark-config.html">Configuring/Using Wireshark F5 Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wireshark-config.html">6. Configuring/Using Wireshark F5 Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="low-details.html">7. F5 Low Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="med-details.html">8. F5 Medium Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="high-details.html">9. F5 High Details</a></li>
 </ul>
 
         </span><!-- Use this file to add extra links to the bottom of the ToC sidebar -->
@@ -287,8 +290,8 @@
 <div>5.3.1. tmsh list ltm virtual hackazon.f5demo.com_https_vs destination</div></blockquote>
 <p>5.4. Now take the destination address and compose a tcpdump command to track the traffic coming to this virtual server:</p>
 <blockquote>
-<div>5.4.1. tcpdump -nni 0.0:nnn -s0 -w/var/tmp/hackazon.pcap host 10.128.10.200</div></blockquote>
-<p>5.5. After starting the capture, start Chrome and click on the Hackazon bookmark.  Browse around the site following a couple links.  Then stop the capture by using Ctrl+c.</p>
+<div>5.4.1. tcpdump -nni 0.0:nnn -s0 -w/var/tmp/hackazon.pcap host 10.1.10.201</div></blockquote>
+<p>5.5. After starting the capture, start Chrome and click on the Hackazon bookmark.  Browse around the site following a couple links.  Next go to the address bar and type in: “<a class="reference external" href="https://hackazon.f5demo.com:8080">https://hackazon.f5demo.com:8080</a>”.  Then stop the capture in the putty session by using ‘Ctrl+c’.</p>
 <p>5.6. Now start WinSCP from the quick launch bar.</p>
 <p>5.7. Select the F5-LTM and click on Login.</p>
 <p>5.8. On the right side of WinSCP browse to /shared/tmp/ and move the hackazon.pcap file to the My Documents folder on your pc on the left.</p>
@@ -304,7 +307,7 @@
         <a href="install.html" title="4. Install the F5 Wireshark Plugin" accesskey="p" class="btn btn-primary pull-left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
        
        
-          <a href="wireshark-config.html" title="Configuring/Using Wireshark F5 Plugin" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+          <a href="wireshark-config.html" title="6. Configuring/Using Wireshark F5 Plugin" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
        
      </div>
      </div>

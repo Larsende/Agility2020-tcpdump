@@ -58,6 +58,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. F5 Low Details" href="low-details.html" />
     <link rel="prev" title="5. Taking a Capture from the F5" href="captures.html" />
   </head><body>
   <div class="container-fluid">
@@ -239,7 +240,10 @@
         <h5>Current Page</h5>
         <span class="nav-sidebartoc">
             <ul>
-<li><a class="reference internal" href="#">6. Configuring/Using Wireshark F5 Plugin</a></li>
+<li><a class="reference internal" href="#">6. Configuring/Using Wireshark F5 Plugin</a><ul>
+<li><a class="reference internal" href="#follow-f5-conversation">6.6 Follow F5 Conversation</a></li>
+</ul>
+</li>
 </ul>
 
          </span>
@@ -253,7 +257,13 @@
 <li class="toctree-l1"><a class="reference internal" href="f5-tcpdump-options.html">3. F5 Specific tcpdump Switches</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">4. Install the F5 Wireshark Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="captures.html">5. Taking a Capture from the F5</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Configuring/Using Wireshark F5 Plugin</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Configuring/Using Wireshark F5 Plugin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#follow-f5-conversation">6.6 Follow F5 Conversation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="low-details.html">7. F5 Low Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="med-details.html">8. F5 Medium Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="high-details.html">9. F5 High Details</a></li>
 </ul>
 
         </span><!-- Use this file to add extra links to the bottom of the ToC sidebar -->
@@ -283,17 +293,15 @@
 <p>6.2. Notice in the middle section of wireshark you will see the tcpdump command being run.  You will also see the version of the F5 code, the F5 hostname, and the Platform ID number (in this case Z100 for Virtual Edition).</p>
 <img alt="_images/fileinfo.png" src="_images/fileinfo.png" />
 <p>6.3. Now we will use a wireshark display filter to see a specific request.  Add ‘tcp.port == 80’ in the display filter field and hit enter.</p>
-<img alt="_images/port80.png" src="_images/port80.png" />
+<a class="reference internal image-reference" href="_images/port80.png"><img alt="_images/port80.png" src="_images/port80.png" style="width: 1192.0px; height: 533.0px;" /></a>
 <p>6.4. In the capture above packet 7 shows the GET requests to the website.  In your capture it will be a different packet number but you can see in the Info area that it is a GET request.</p>
-<p>6.5. Right click on the GET request and go to protocol preferences, and then populate fields for other dissectors.</p>
-<img alt="_images/dissectors.png" src="_images/dissectors.png" />
-<p>6.6. Now notice in the middle section the F5 Ethernet trailer.  Expand this.</p>
-<p>6.7. Then Expand F5 Low Details.</p>
-<img alt="_images/low-details.png" src="_images/low-details.png" />
-<p>6.8. Notice the Ingress value is True (IN).  This is from the perspective of the F5.  The traffic is inbound to the F5.</p>
-<p>6.9. The low details also give the Slot value (always be 1 for an appliance).  The TMM number in the image is 3.</p>
-<p>6.10. The most important value here is the VIP.  In this case it is the /Common/hackazon.f5demo.com_http_vs.  Notice this is the port 80 VIP for this particular destination IP.  The VIP is configured with a redirect to SSL.</p>
-<p>6.11. The next packet in the capture is a HTTP 302 redirect to the SSL vip.</p>
+<p>6.5. Right click on the GET request and go to protocol preferences, and then populate fields for other dissectors.  This makes it so when applying a display filter it applies to both the client and server sides of the F5 connection.  We will cover this in the F5 High Details section.</p>
+<a class="reference internal image-reference" href="_images/dissectors.png"><img alt="_images/dissectors.png" src="_images/dissectors.png" style="width: 590.0px; height: 540.0px;" /></a>
+<div class="section" id="follow-f5-conversation">
+<h2>6.6 Follow F5 Conversation<a class="headerlink" href="#follow-f5-conversation" title="Permalink to this headline">¶</a></h2>
+<p>6.6.1.  Clear the display filter and hit enter.  Right Click on one of the packets in the capture and select Conversation Filter and then F5 TCP.  This will automatically develop a display filter to show the client and server sides of a conversation going through the BIG-IP device.</p>
+<a class="reference internal image-reference" href="_images/f5-tcp-convo.png"><img alt="_images/f5-tcp-convo.png" src="_images/f5-tcp-convo.png" style="width: 626.0px; height: 502.0px;" /></a>
+</div>
 </div>
 
 
@@ -304,6 +312,8 @@
        
         <a href="captures.html" title="5. Taking a Capture from the F5" accesskey="p" class="btn btn-primary pull-left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
        
+       
+          <a href="low-details.html" title="7. F5 Low Details" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
        
      </div>
      </div>

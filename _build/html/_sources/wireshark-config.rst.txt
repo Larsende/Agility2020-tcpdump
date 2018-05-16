@@ -12,23 +12,19 @@ We will start with what kind of unique information is gathered through the plugi
 6.3. Now we will use a wireshark display filter to see a specific request.  Add 'tcp.port == 80' in the display filter field and hit enter.
 
 .. image:: ./_static/port80.png
+   :scale: 50 %
 
 6.4. In the capture above packet 7 shows the GET requests to the website.  In your capture it will be a different packet number but you can see in the Info area that it is a GET request.
 
-6.5. Right click on the GET request and go to protocol preferences, and then populate fields for other dissectors.  
+6.5. Right click on the GET request and go to protocol preferences, and then populate fields for other dissectors.  This makes it so when applying a display filter it applies to both the client and server sides of the F5 connection.  We will cover this in the F5 High Details section.  
 
 .. image:: ./_static/dissectors.png
+   :scale: 50 %
 
-6.6. Now notice in the middle section the F5 Ethernet trailer.  Expand this.
+6.6 Follow F5 Conversation
+--------------------------
 
-6.7. Then Expand F5 Low Details.
+6.6.1.  Clear the display filter and hit enter.  Right Click on one of the packets in the capture and select Conversation Filter and then F5 TCP.  This will automatically develop a display filter to show the client and server sides of a conversation going through the BIG-IP device.
 
-.. image:: ./_static/low-details.png
-
-6.8. Notice the Ingress value is True (IN).  This is from the perspective of the F5.  The traffic is inbound to the F5.
-
-6.9. The low details also give the Slot value (always be 1 for an appliance).  The TMM number in the image is 3.
-
-6.10. The most important value here is the VIP.  In this case it is the /Common/hackazon.f5demo.com_http_vs.  Notice this is the port 80 VIP for this particular destination IP.  The VIP is configured with a redirect to SSL.
-
-6.11. The next packet in the capture is a HTTP 302 redirect to the SSL vip.  
+.. image:: ./_static/f5-tcp-convo.png
+   :scale: 50 %

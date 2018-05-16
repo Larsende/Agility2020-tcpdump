@@ -15,3 +15,6 @@ Welcome to the troubleshoot with tcpdump and Wireshark documentation.
    install
    captures
    wireshark-config
+   low-details
+   med-details
+   high-details

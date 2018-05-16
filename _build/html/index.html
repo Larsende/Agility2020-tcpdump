@@ -58,7 +58,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1.1 tcpdump switches" href="switches.html" />
+    <link rel="next" title="1. tcpdump Switches" href="switches.html" />
   </head><body>
   <div class="container-fluid">
   <div class="row corp-header">
@@ -248,19 +248,15 @@
         <span class="nav-sidebartoc">
             <p class="caption"><span class="caption-text">Switches</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="switches.html">1.1 tcpdump switches</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-d">1.1.1 tcpdump -D</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-i">1.1.2 tcpdump -i</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-n">1.1.3 tcpdump -n</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-nn">1.1.4 tcpdump -nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-x">1.1.5 tcpdump -X</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-w">1.1.6 tcpdump -w</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-s">1.1.7 tcpdump -s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switches.html">1. tcpdump Switches</a></li>
 <li class="toctree-l1"><a class="reference internal" href="filters.html">2. tcpdump Filters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="f5-tcpdump-options.html">3. F5 Specific tcpdump Switches</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">4. Install the F5 Wireshark Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="captures.html">5. Taking a Capture from the F5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireshark-config.html">6. Configuring/Using Wireshark F5 Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="low-details.html">7. F5 Low Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="med-details.html">8. F5 Medium Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="high-details.html">9. F5 High Details</a></li>
 </ul>
 
         </span><!-- Use this file to add extra links to the bottom of the ToC sidebar -->
@@ -289,14 +285,16 @@
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Switches</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="switches.html">1.1 tcpdump switches</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-d">1.1.1 tcpdump -D</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-i">1.1.2 tcpdump -i</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-n">1.1.3 tcpdump -n</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-nn">1.1.4 tcpdump -nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-x">1.1.5 tcpdump -X</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-w">1.1.6 tcpdump -w</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switches.html#tcpdump-s">1.1.7 tcpdump -s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switches.html">1. tcpdump Switches</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-d">1.1 tcpdump -D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-i">1.2 tcpdump -i</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-n">1.3 tcpdump -n</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-nn">1.4 tcpdump -nn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-x">1.5 tcpdump -X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-w">1.6 tcpdump -w</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switches.html#tcpdump-s">1.7 tcpdump -s</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="filters.html">2. tcpdump Filters</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="filters.html#host-filters">2.1 Host Filters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="filters.html#port-filters">2.2 Port Filters</a></li>
@@ -310,7 +308,16 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">4. Install the F5 Wireshark Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="captures.html">5. Taking a Capture from the F5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wireshark-config.html">6. Configuring/Using Wireshark F5 Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wireshark-config.html">6. Configuring/Using Wireshark F5 Plugin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wireshark-config.html#follow-f5-conversation">6.6 Follow F5 Conversation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="low-details.html">7. F5 Low Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="med-details.html">8. F5 Medium Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="high-details.html">9. F5 High Details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="high-details.html#high-details-and-other-field-dissectors">9.9. High Details and Other Field Dissectors</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -322,7 +329,7 @@
        <div class="col-lg-12">
        
        
-          <a href="switches.html" title="1.1 tcpdump switches" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+          <a href="switches.html" title="1. tcpdump Switches" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
        
      </div>
      </div>
