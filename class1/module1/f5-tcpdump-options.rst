@@ -1,0 +1,47 @@
+3. F5 Specific tcpdump Switches
+===============================
+
+F5 has added some F5 specific switches to the tcpdump utility on the F5.  These switches give additional information on your packet captures.  These switches are places after the interface option in the command line as follows:
+
+3.1. :n gives low details
+-------------------------
+
+   * for example: tcpdump -nni 0.0:n -s0 -w/var/tmp/capture.pcap
+
+   * This will give basic information such as whether the captured traffic is ingress or egress to the F5.  It will also give the TMM instance the traffic is on as well as the Chassis slot processing the traffic.  This option also lists the virtual server name that processes the traffic.
+
+.. image:: /_static/tcpdump-n.png
+
+3.2. :nn gives medium details
+-----------------------------
+
+   A: for example: tcpdump -nni 0.0:nn -s0 -w/var/tmp/capture.pcap.
+
+   B: This option will give all the low detail information plus the following: 
+
+      * Flow ID number
+      * Peer Flow ID number
+      * TCP RST cause
+      * Flow type
+      * HA unit
+      * Ingress Slot
+      * Ingress port
+      * Priority
+
+.. image:: /_static/tcpdump-nn.png
+
+3.3. :nnn gives high details
+----------------------------
+
+   A: for example: tcpdump -nni 0.0:nnn -s0 -w/var/tmp/capture.pcap
+
+   B: This option will give all the low and medium details plus the following
+
+      * Peer IP Protocol
+      * Peer VLAN
+      * Peer Remote address
+      * Peer local address
+      * Peer remote port
+      * Peer local port
+
+.. image:: /_static/tcpdump-nnn.png
