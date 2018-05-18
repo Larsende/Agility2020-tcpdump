@@ -1,7 +1,7 @@
 9. F5 High Details
 ==================
 
-9.1. Now Expand the F5 High Details on one of the SSL sessions data packets.  (You can type in a display filter of 'tcp.port == 443' to list the SSL sessions). Make sure you select a packet that has Application Data in the Info field.
+9.1. Now Expand the F5 High Details on one of the SSL sessions data packets.  (You can type in a display filter of 'f5.ethtrailer.peeraddr' to list the SSL sessions). Make sure you select a packet that has Application Data in the Info field.
 
 .. image:: /_static/high-details.png
    :scale: 50 %
