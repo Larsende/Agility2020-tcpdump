@@ -9,12 +9,4 @@ Welcome to the troubleshoot with tcpdump and Wireshark documentation.
    :caption: Switches
    :glob:
 
-   switches
-   filters
-   f5-tcpdump-options
-   install
-   captures
-   wireshark-config
-   low-details
-   med-details
-   high-details
+   class*/class*

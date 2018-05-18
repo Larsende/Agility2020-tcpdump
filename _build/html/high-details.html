@@ -58,7 +58,6 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="8. F5 Medium Details" href="med-details.html" />
   </head><body>
   <div class="container-fluid">
   <div class="row corp-header">
@@ -250,19 +249,8 @@
         <h5>Site Contents</h5>
         <span class="nav-sidebartoc">
             <p class="caption"><span class="caption-text">Switches</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="switches.html">1. tcpdump Switches</a></li>
-<li class="toctree-l1"><a class="reference internal" href="filters.html">2. tcpdump Filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="f5-tcpdump-options.html">3. F5 Specific tcpdump Switches</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install.html">4. Install the F5 Wireshark Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="captures.html">5. Taking a Capture from the F5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wireshark-config.html">6. Configuring/Using Wireshark F5 Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="low-details.html">7. F5 Low Details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="med-details.html">8. F5 Medium Details</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">9. F5 High Details</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#high-details-and-other-field-dissectors">9.9. High Details and Other Field Dissectors</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class1/class1.html">F5 tcpdump and Wireshark</a></li>
 </ul>
 
         </span><!-- Use this file to add extra links to the bottom of the ToC sidebar -->
@@ -288,7 +276,7 @@
   <div class="section" id="f5-high-details">
 <h1>9. F5 High Details<a class="headerlink" href="#f5-high-details" title="Permalink to this headline">¶</a></h1>
 <p>9.1. Now Expand the F5 High Details on one of the SSL sessions data packets.  (You can type in a display filter of ‘tcp.port == 443’ to list the SSL sessions). Make sure you select a packet that has Application Data in the Info field.</p>
-<a class="reference internal image-reference" href="_images/high-details.png"><img alt="_images/high-details.png" src="_images/high-details.png" style="width: 915.0px; height: 504.0px;" /></a>
+<a class="reference internal image-reference" href="_images/high-details.png"><img alt="_images/high-details.png" src="_images/high-details.png" style="width: 1153.0px; height: 389.0px;" /></a>
 <p>9.2. The F5 High Details contains a lot of valuable information.  In the example above we see that the Peer IP Protocol is 6 or TCP.</p>
 <p>9.3. The Peer VLAN is going to be the VLAN that the traffic enters the F5 from.  In the example this is VLAN 4093 which is the external VLAN.</p>
 <p>9.4. The Peer remote address for an Outbound packet will be the Application server IP address, if it were Inbound the address would be the Client Address.  The Peer Remote address will always be an address that is not on the BIG-IP directly, in this case 10.128.20.210. The second Peer remote address is the IPv6 version of the address.</p>
@@ -309,15 +297,6 @@
 
 
     
-    
-     <div class="row next-prev-btn-row">
-       <div class="col-lg-12">
-       
-        <a href="med-details.html" title="8. F5 Medium Details" accesskey="p" class="btn btn-primary pull-left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
-       
-       
-     </div>
-     </div>
     
     
     </article>

@@ -10,7 +10,7 @@ F5 has added some F5 specific switches to the tcpdump utility on the F5.  These 
 
    * This will give basic information such as whether the captured traffic is ingress or egress to the F5.  It will also give the TMM instance the traffic is on as well as the Chassis slot processing the traffic.  This option also lists the virtual server name that processes the traffic.
 
-.. image:: ./_static/tcpdump-n.png
+.. image:: /_static/tcpdump-n.png
 
 3.2. :nn gives medium details
 -----------------------------
@@ -28,7 +28,7 @@ F5 has added some F5 specific switches to the tcpdump utility on the F5.  These 
       * Ingress port
       * Priority
 
-.. image:: ./_static/tcpdump-nn.png
+.. image:: /_static/tcpdump-nn.png
 
 3.3. :nnn gives high details
 ----------------------------
@@ -44,4 +44,4 @@ F5 has added some F5 specific switches to the tcpdump utility on the F5.  These 
       * Peer remote port
       * Peer local port
 
-.. image:: ./_static/tcpdump-nnn.png
+.. image:: /_static/tcpdump-nnn.png

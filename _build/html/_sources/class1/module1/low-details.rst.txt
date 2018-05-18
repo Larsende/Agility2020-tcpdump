@@ -9,7 +9,7 @@
 
 7.4. Then expand F5 Low Details.
 
-.. image:: ./_static/low-details.png
+.. image:: /_static/low-details.png
    :scale: 50 %
 
 7.5. Notice the Ingress value is True (IN).  This is from the perspective of the F5.  The traffic is inbound to the F5.

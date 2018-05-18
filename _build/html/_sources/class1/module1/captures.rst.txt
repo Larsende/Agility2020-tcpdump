@@ -9,7 +9,7 @@ Let's take the information we have gathered so far and take a packet capture fro
 
 5.3. List the destination address of the virtual on the F5 using the following command:
      
-   5.3.1. tmsh list ltm virtual hackazon.f5demo.com_https_vs destination
+   5.3.1. tmsh list ltm virtual hackazon.f5demo.com.app/hackazon.f5demo.com_https_vs destination
 
 5.4. Now take the destination address and compose a tcpdump command to track the traffic coming to this virtual server:
 
@@ -17,10 +17,12 @@ Let's take the information we have gathered so far and take a packet capture fro
 
 5.5. After starting the capture, start Chrome and click on the Hackazon bookmark.  Browse around the site following a couple links.  Next go to the address bar and type in: "https://hackazon.f5demo.com:8080".  Then stop the capture in the putty session by using 'Ctrl+c'.
 
-5.6. Now start WinSCP from the quick launch bar.
+5.6. Open a terminal screen on the Ubuntu jumpbox.  Change Directory to the Downloads folder. 
 
-5.7. Select the F5-LTM and click on Login.
+5.7. Run the following command: 'scp root@10.1.1.245:/var/tmp/hackazon.pcap ./'
 
-5.8. On the right side of WinSCP browse to /shared/tmp/ and move the hackazon.pcap file to the My Documents folder on your pc on the left.  
+5.8. You will be prompted to save the SSH keys. Hit enter, then enter the root password for the F5.  
 
-5.9. Now open Wireshark and open the hackazon.pcap file you just copied from the F5. 
+5.9. Now open Wireshark and open the hackazon.pcap file you just copied from the F5.
+
+5.10. If you run into issues copying the hackazon.pcap file to the jumpbox you can use the already created file in the Downloads folder hackazon2.pcap.

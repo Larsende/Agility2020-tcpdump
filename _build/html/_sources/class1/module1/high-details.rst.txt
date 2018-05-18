@@ -1,9 +1,9 @@
 9. F5 High Details
 ==================
 
-9.1. Now Expand the F5 High Details on one of the SSL sessions data packets.  (You can type in a display filter of 'tcp.port == 443' to list the SSL sessions). Make sure you select a packet that has Application Data in the Info field.
+9.1. Now Expand the F5 High Details on one of the SSL sessions data packets.  (You can type in a display filter of 'f5.ethtrailer.peeraddr' to list the SSL sessions). Make sure you select a packet that has Application Data in the Info field.
 
-.. image:: ./_static/high-details.png
+.. image:: /_static/high-details.png
    :scale: 50 %
 
 9.2. The F5 High Details contains a lot of valuable information.  In the example above we see that the Peer IP Protocol is 6 or TCP.
@@ -27,7 +27,7 @@
 
 9.9.2. Notice that the Source and Destination fields in the results do not contain the ip address of 10.128.20.210.
 
-.. image:: ./_static/disect-high.png
+.. image:: /_static/disect-high.png
    :scale: 50 %
 
 9.9.3. Is the display filter broken?
