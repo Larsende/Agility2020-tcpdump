@@ -1,10 +1,10 @@
-tcpdump Filters
-===============
+2. tcpdump Filters
+==================
 
 When running tcpdump capture from the F5 you should always use a filter to limit the volume of traffic you will gather.
 
-Host Filters
-------------
+2.1 Host Filters
+~~~~~~~~~~~~~~~~
 
 tcpdump host 192.168.2.5
 This will filter the packet capture to only gather packets going to or coming from the host 192.168.2.5.
@@ -16,8 +16,8 @@ tcpdump dst host 192.168.2.5
 This will filter the packet capture to only gather packets going to 192.168.2.5.
 
 
-Port Filters
-------------
+2.2 Port Filters
+~~~~~~~~~~~~~~~~
 
 tcpdump port 443
 This will filter the packet capture to only gather packets with a source or destination of port 443.
@@ -27,4 +27,3 @@ This will capture traffic being sourced from port 1055.
 
 tcpdump dst port 443
 This will capture traffic destined for port 443.
-
