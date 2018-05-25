@@ -24,9 +24,9 @@ You can download the F5 Wireshark plugin from devcentral.f5.com here:  https://d
 .. code-block:: bash
    :linenos:
 
-      sudo cp ./Downloads/wireshark/Linux64-2.2.0/f5ethtrailer.so /usr/lib/x86_64-linux-gnu/wireshark/plugins/2.2.6/'
+   sudo cp ./Downloads/wireshark/Linux64-2.2.0/f5ethtrailer.so /usr/lib/x86_64-linux-gnu/wireshark/plugins/2.2.6/
 
-   4.5.3.: Depending on your OS and Wireshark version, you will need the correct plugin files from the correct folder.
+4.5.3.: Depending on your OS and Wireshark version, you will need the correct plugin files from the correct folder.
 
 4.6. Shutdwon Wireshark and restart it.
 
