@@ -19,9 +19,14 @@ Let's take the information we have gathered so far and take a packet capture fro
 
 5.6. Open a terminal screen on the Ubuntu jumpbox.  Change Directory to the Downloads folder. 
 
-5.7. Run the following command: 'scp root@10.1.1.245:/var/tmp/hackazon.pcap ./'
+5.7. Run the following command: 
 
-5.8. You will be prompted to save the SSH keys. Hit enter, then enter the root password for the F5.  
+.. code-block:: bash
+   :linenos:
+  
+    sudo scp root@10.1.1.245:/var/tmp/hackazon.pcap ./
+
+5.8. You will be prompted to save the SSH keys. Type yes and hit enter, then enter the root password for the F5.  
 
 5.9. Now open Wireshark and open the hackazon.pcap file you just copied from the F5.
 

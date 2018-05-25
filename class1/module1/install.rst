@@ -19,7 +19,12 @@ You can download the F5 Wireshark plugin from devcentral.f5.com here:  https://d
 
    4.5.2.: Open the Linux64-2.2.0 folder and copy the f5ethtrailer.so to the plugin directory determined in step 3.
 
-      4.5.2.1: In order to move the file you will need to elevate permissions.  The easiest way to do this is from the command line terminal.  Use the command: 'sudo cp ./Downloads/wireshark/Linux64-2.2.0/f5ethtrailer.so /usr/lib/x86_64-linux-gnu/wireshark/plugins/2.2.6/'
+      4.5.2.1: In order to move the file you will need to elevate permissions.  The easiest way to do this is from the command line terminal.  Use the command: 
+
+.. code-block:: bash
+   :linenos:
+
+      sudo cp ./Downloads/wireshark/Linux64-2.2.0/f5ethtrailer.so /usr/lib/x86_64-linux-gnu/wireshark/plugins/2.2.6/'
 
    4.5.3.: Depending on your OS and Wireshark version, you will need the correct plugin files from the correct folder.
 

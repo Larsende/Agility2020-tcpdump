@@ -14,7 +14,7 @@
 
 7.5. Notice the Ingress value is True (IN).  This is from the perspective of the F5.  The traffic is inbound to the F5.
 
-7.6. The low details also give the Slot value (always be 1 for an appliance).  The TMM number in the image is 3.
+7.6. The low details also gives the Slot value (always be 1 for an appliance).  The TMM number in the image is 3.
 
 7.7. The most important value here is the VIP.  In this case it is the /Common/hackazon.f5demo.com_http_vs.  Notice this is the port 80 VIP for this particular destination IP.  The VIP is configured with a redirect to SSL.
 
