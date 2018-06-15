@@ -27,13 +27,17 @@ SSL Decrypt from Linux Client
    export SSLKEYLOGFILE=/home/f5student/session-key.log
    chromium-browser
 
+10.5. This will launch the Chrome browser and once you close the browser it will stop logging the SSL Session key data.  
+
+10.6. Once the traffic has been captured you will import the capture file into Wireshark and configure the SSL options to use the session-key.log file.
+
 
 SSL Decrypt from F5
 -------------------
 
 More often you will not have access to modify the client in order to capture the SSL session data.  The other option is to get the pre-master session data from the F5 itself by doing the following.
 
-10.5. Configure a new iRule as follows:
+10.7. Configure a new iRule as follows:
 
 .. code-block:: tcl
    :linenos:
@@ -46,14 +50,14 @@ More often you will not have access to modify the client in order to capture the
        log local0. "RSA Session-ID:[SSL::sessionid] Master-Key:[SSL::sessionsecret]"
    }
 
-10.6. Apply this new iRule to the virtual server.  In our lab environment the iRule has already been created and applied to the Virtual Server.
+10.8. Apply this new iRule to the virtual server.  In our lab environment the iRule has already been created and applied to the Virtual Server.
 
-10.7. You can now start a tcpdump and surf the website.  
+10.9. You can now start a tcpdump and surf the website.  
 
-10.8. After you have stopped the tcpdump, you will now need to SSH to the F5 and run the following command:
+10.10. After you have stopped the tcpdump, you will now need to SSH to the F5 and run the following command:
 
 .. code-block:: bash
 
    grep Session-ID /var/log/ltm | sed 's/.*\(RSA.*\)/\1/' > /var/tmp/session.pms
 
-10.9. Now the session.pms file can be pulled from the F5 and put into Wireshark. 
+10.11. Now the session.pms file can be pulled from the F5 and put into Wireshark. 
