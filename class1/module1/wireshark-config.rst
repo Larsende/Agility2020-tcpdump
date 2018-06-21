@@ -21,8 +21,8 @@ We will start with what kind of unique information is gathered through the plugi
    .. image:: /_static/dissectors.png
       :scale: 50 %
 
-# Follow F5 Conversation
-~~~~~~~~~~~~~~~~~~~~~~~~
+Follow F5 Conversation
+~~~~~~~~~~~~~~~~~~~~~~
 
 #. Clear the display filter and hit enter.  Right Click on one of the packets in the capture and select Conversation Filter and then F5 TCP.  This will automatically develop a display filter to show the client and server sides of a conversation going through the BIG-IP device.
 
