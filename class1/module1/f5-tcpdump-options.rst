@@ -5,17 +5,17 @@ F5 has added some F5 specific switches to the tcpdump utility on the F5.  These 
 
 #. :n gives low details
 
-   #. for example: tcpdump -nni 0.0:n -s0 -w/var/tmp/capture.pcap
+   #) for example: tcpdump -nni 0.0:n -s0 -w/var/tmp/capture.pcap
 
-   #. This will give basic information such as whether the captured traffic is ingress or egress to the F5.  It will also give the TMM instance the traffic is on as well as the Chassis slot processing the traffic.  This option also lists the virtual server name that processes the traffic.
+   #) This will give basic information such as whether the captured traffic is ingress or egress to the F5.  It will also give the TMM instance the traffic is on as well as the Chassis slot processing the traffic.  This option also lists the virtual server name that processes the traffic.
 
    .. image:: /_static/tcpdump-n.png
 
 #. :nn gives medium details
 
-   #. for example: tcpdump -nni 0.0:nn -s0 -w/var/tmp/capture.pcap.
+   #) for example: tcpdump -nni 0.0:nn -s0 -w/var/tmp/capture.pcap.
 
-   #. This option will give all the low detail information plus the following: 
+   #) This option will give all the low detail information plus the following: 
 
       * Flow ID number
       * Peer Flow ID number
@@ -30,9 +30,9 @@ F5 has added some F5 specific switches to the tcpdump utility on the F5.  These 
 
 #. :nnn gives high details
 
-   #. for example: tcpdump -nni 0.0:nnn -s0 -w/var/tmp/capture.pcap
+   #) for example: tcpdump -nni 0.0:nnn -s0 -w/var/tmp/capture.pcap
 
-   #. This option will give all the low and medium details plus the following
+   #) This option will give all the low and medium details plus the following
 
       * Peer IP Protocol
       * Peer VLAN
