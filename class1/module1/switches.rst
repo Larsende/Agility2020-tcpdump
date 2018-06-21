@@ -1,6 +1,8 @@
 tcpdump Switches
 ~~~~~~~~~~~~~~~~
 
+The tcpdump command has several switches with different purposes.  The following are some of the most commonly used:
+
 # tcpdump -D
 
   To list the available interfaces for packet capture use tcpdump -D
