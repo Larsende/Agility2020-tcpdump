@@ -9,11 +9,11 @@ Let's take the information we have gathered so far and take a packet capture fro
 
 #. List the destination address of the virtual on the F5 using the following command:
      
-   A) tmsh list ltm virtual hackazon.f5demo.com.app/hackazon.f5demo.com_https_vs destination
+   a) tmsh list ltm virtual hackazon.f5demo.com.app/hackazon.f5demo.com_https_vs destination
 
 #. Now take the destination address and compose a tcpdump command to track the traffic coming to this virtual server:
 
-   A) tcpdump -nni 0.0:nnn -s0 -w/var/tmp/hackazon.pcap host 10.1.10.201
+   a) tcpdump -nni 0.0:nnn -s0 -w/var/tmp/hackazon.pcap host 10.1.10.201
 
 #. After starting the capture, start Chrome and click on the Hackazon bookmark.  Browse around the site following a couple links.  Next go to the address bar and type in: "https://hackazon.f5demo.com:8080".  Then stop the capture in the putty session by using 'Ctrl+c'.
 
