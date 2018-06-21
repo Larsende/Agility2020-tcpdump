@@ -1,5 +1,5 @@
-1. tcpdump Switches
-===================
+tcpdump Switches
+================
 
 # tcpdump -D
 ~~~~~~~~~~~~~~
