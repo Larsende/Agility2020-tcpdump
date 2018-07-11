@@ -1,47 +1,42 @@
-1. tcpdump Switches
-===================
+tcpdump Switches
+~~~~~~~~~~~~~~~~
 
-1.1 tcpdump -D
-~~~~~~~~~~~~~~
+The tcpdump command has several switches with different purposes.  The following are some of the most commonly used:
 
-To list the available interfaces for packet capture use tcpdump -D
+#. tcpdump -D
 
-The 'any' interface will be taken by TMM and made into the interface '0.0'
+   To list the available interfaces for packet capture use tcpdump -D
 
-.. image:: /_static/tcpdump-d.png
+   The 'any' interface will be taken by TMM and made into the interface '0.0'
 
-1.2 tcpdump -i
---------------
+   .. image:: /_static/tcpdump-d.png
 
-To capture traffic on a specific interface use tcpdump -i <interface name>. i.e. 'tcpdump -i 0.0'
+#. tcpdump -i
 
-When using 0.0 for the interface on a capture make sure to use a capture filter or you will get too much information and may impact performance on the F5.
+   To capture traffic on a specific interface use tcpdump -i <interface name>. i.e. 'tcpdump -i 0.0'
 
-.. image:: /_static/tcpdump-i.png
+   When using 0.0 for the interface on a capture make sure to use a capture filter or you will get too much information and may impact performance on the F5.
 
-1.3 tcpdump -n
---------------
+   .. image:: /_static/tcpdump-i.png
 
-Use tcpdump -n to disable name resolution of host names
+#. tcpdump -n
 
-1.4 tcpdump -nn 
----------------
+   Use tcpdump -n to disable name resolution of host names
 
-Use tcpdump -nn to disable name resolution of both host names and port names
+#. tcpdump -nn 
 
-1.5 tcpdump -X
---------------
+   Use tcpdump -nn to disable name resolution of both host names and port names
 
-Use tcpdump -X to show output including ASCII and hex.  This will making reading screen output easier.
+#. tcpdump -X
 
-.. image:: /_static/tcpdump-x.png
+   Use tcpdump -X to show output including ASCII and hex.  This will making reading screen output easier.
 
-1.6 tcpdump -w
---------------
+   .. image:: /_static/tcpdump-x.png
 
-Use tcpdump -w to write the packet capture to a capture file that is readable in an application such as Wireshark.
+#. tcpdump -w
 
-1.7 tcpdump -s
---------------
+   Use tcpdump -w to write the packet capture to a capture file that is readable in an application such as Wireshark.
 
-Use 'tcpdump -s0' to capture the full data packet.  The number following the 's' indicates the number of bits to capture of each packet.  0 indicates all.
+#. tcpdump -s
+
+   Use 'tcpdump -s0' to capture the full data packet.  The number following the 's' indicates the number of bits to capture of each packet.  0 indicates all.
