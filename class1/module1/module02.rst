@@ -1,6 +1,8 @@
 tcpdump Filters
 ~~~~~~~~~~~~~~~
 
+This section is for informative value and doesn't nothing will be done in the lab environment.
+
 When running tcpdump capture from the F5 you should always use a filter to limit the volume of traffic you will gather.
 
 #. Host Filters

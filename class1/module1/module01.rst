@@ -1,7 +1,12 @@
 tcpdump Switches
 ~~~~~~~~~~~~~~~~
 
-The tcpdump command has several switches with different purposes.  The following are some of the most commonly used:
+The tcpdump command has several switches with different purposes.  The following are some of the most commonly used.
+
+You can run these commands from the Jumpbox to see the output in our lab environment or you can just read through the information, it is up to you.  To launch the SSH connection to the BIG-IP double click on the Putty shortcut on the desktop.  Then connect to the BIGIP01 instance.  The credentials are:
+
+user: root
+password: default
 
 #. tcpdump -D
 

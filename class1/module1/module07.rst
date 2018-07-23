@@ -1,7 +1,7 @@
 F5 Low Details
 ~~~~~~~~~~~~~~
 
-#. Apply a display filter of 'tcp.port == 80' to the capture.
+#. Apply a new display filter of 'tcp.port == 80' to the capture.
  
 #. Select the packet with the GET request in the info field.
 

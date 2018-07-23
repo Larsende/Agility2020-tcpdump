@@ -3,9 +3,9 @@ Taking a Capture from the F5
 
 Let's take the information we have gathered so far and take a packet capture from the F5.  
 
-#. Start Putty and launch the bigip1 SSH session.
+#. Start Putty and launch the bigip01 SSH session.
 
-#. Login as root user.
+#. Login as root user.  Password is 'default'.
 
 #. List the destination address of the virtual on the F5 using the following command:
      

@@ -1,6 +1,8 @@
 F5 Specific tcpdump Switches
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+This section is for informative value and doesn't nothing will be done in the lab environment.
+
 F5 has added some F5 specific switches to the tcpdump utility on the F5.  These switches give additional information on your packet captures.  These switches are places after the interface option in the command line as follows:
 
 #. :n gives low details
