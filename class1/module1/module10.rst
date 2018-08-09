@@ -9,6 +9,7 @@ SSL Decrypt from Windows Client
 #. To use the client to decrypt you must add a System Variable to log the session key data for decryption.  On a windows client you would go into the Environment Variables and add a SSLKEYLOGFILE value to a text file on the machine as in the following image.
 
    .. image:: /_static/system_variables.png
+      :height: 500px
 
 #. Once the system variable has been put in place you can then launch a web browser and start the traffic that you want to analyze.
 

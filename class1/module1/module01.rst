@@ -15,6 +15,7 @@ password: default
    The 'any' interface will be taken by TMM and made into the interface '0.0'
 
    .. image:: /_static/tcpdump-d.png
+      :height: 500px
 
 #. **tcpdump -i**
 
@@ -23,6 +24,7 @@ password: default
    When using 0.0 for the interface on a capture make sure to use a capture filter or you will get too much information and may impact performance on the F5.
 
    .. image:: /_static/tcpdump-i.png
+      :height: 500px
 
 #. **tcpdump -n**
 
@@ -37,6 +39,7 @@ password: default
    Use tcpdump -X to show output including ASCII and hex.  This will making reading screen output easier.
 
    .. image:: /_static/tcpdump-x.png
+      :height: 500px
 
 #. **tcpdump -w**
 

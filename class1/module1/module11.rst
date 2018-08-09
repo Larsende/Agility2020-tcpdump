@@ -24,6 +24,7 @@ After each of these commands you will be prompted to accept the SSH keys.  Type 
 #. Expand on the left side, Protocols, then select SSL.
 
    .. image:: /_static/premaster-session.png
+      :height: 500px
 
 #. Browse to the pre-master session key file and click on save.
 
@@ -32,7 +33,9 @@ After each of these commands you will be prompted to accept the SSH keys.  Type 
 #. Right click on one of the SSL packets and select Follow, SSL Stream.
 
    .. image:: /_static/follow-ssl-stream.png
+      :height: 500px
 
 #. You will now see unencrypted SSL data in the capture as follows:
 
    .. image:: /_static/ssl-decrypted-data.png
+      :height: 500px
