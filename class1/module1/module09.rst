@@ -4,7 +4,7 @@ F5 High Details
 #. Now Expand the F5 High Details on one of the SSL sessions data packets.  (You can type in a display filter of 'f5ethtrailer.peeraddr' to retrieve the session we are looking for). Make sure you select a packet that has Application Data in the Info field.
 
    .. image:: /_static/high-details.png
-      :height: 500px
+      :scale: 50 %
 
 #. The F5 High Details contains a lot of valuable information.  In the example above we see that the Peer IP Protocol is 6 or TCP.
 
@@ -28,7 +28,7 @@ High Details and Other Field Dissectors
 #. Notice that the Source and Destination fields in the results do not contain the ip address of 10.128.20.210 as shown in the image.  In the lab you won't see the IP 10.1.20.240 in the source or destination fields.
 
    .. image:: /_static/disect-high.png
-    :height: 500px
+      :scale: 50 %
 
 #. Is the display filter broken?
 

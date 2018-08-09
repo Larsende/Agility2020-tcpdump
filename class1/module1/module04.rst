@@ -35,3 +35,4 @@ You can download the F5 Wireshark plugin from devcentral.f5.com here:  https://d
 #. Check the plugins tab again and make sure the F5 plugin is installed.
 
    .. image:: /_static/wireshark-plugin.png
+      :scale: 50 %
