@@ -19,8 +19,8 @@ import f5_sphinx_theme
 
 # -- Project information -----------------------------------------------------
 
-project = u'Agility2018-TCPdump'
-copyright = u'2018, David Larsen'
+project = u'Agility2020-TCPdump'
+copyright = u'2020, David Larsen'
 author = u'David Larsen'
 
 # The short X.Y version
