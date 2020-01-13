@@ -111,7 +111,7 @@ extensions = [
   'sphinx.ext.todo',
   'sphinx.ext.extlinks',
   'sphinx.ext.graphviz',
-  'sphinx.ext.nwdiag',
+  'sphinxcontrib.nwdiag',
   'sphinxcontrib.blockdiag'
   #'sphinx.ext.autosectionlabel'
 ]
