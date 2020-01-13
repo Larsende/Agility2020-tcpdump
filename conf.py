@@ -110,8 +110,8 @@ if git_branch_name in branch_map:
 extensions = [
   'sphinx.ext.todo',
   'sphinx.ext.extlinks',
-  'sphinx.ext.graphviz',
-  'sphinxcontrib.blockdiag'
+  'sphinx.ext.graphviz'
+  #'sphinxcontrib.blockdiag'
   #'sphinx.ext.autosectionlabel'
 ]
 
