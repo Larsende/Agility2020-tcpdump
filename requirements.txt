@@ -4,4 +4,4 @@ recommonmark
 sphinxcontrib-googleanalytics
 sphinxcontrib-addmetahtml
 sphinxcontrib-nwdiag
-sphinxcontrib-blockdiag
+sphinxcontrib-blockdia
