@@ -13,8 +13,8 @@ We will be using a Windows 2019 jumpbox to connect to the lab environment.  Clic
 
 The credentials will be the following:
 
-user: user
-password: user
+user: `user`
+password: `user`
 
 .. toctree::
    :maxdepth: 1
