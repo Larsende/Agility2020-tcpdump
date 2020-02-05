@@ -12,21 +12,19 @@ Let's take the information we have gathered so far and take a packet capture fro
    .. code-block:: bash
       :linenos:
 
-      tmsh list ltm virtual /Sample_04/A1/serviceMain
+      tmsh list ltm virtual /Sample_04/A1/serviceMain |grep destination
 
-#. Now take the destination address and compose a tcpdump command to track the traffic coming to this virtual server:
+#. Now take the destination IP address and compose a tcpdump command to track the traffic coming to this virtual server:
 
    .. code-block:: bash
       :linenos:
 
-      tcpdump -nni 0.0:nnn -s0 -w/var/tmp/hackazon.pcap host 10.1.20.103
+      tcpdump -nni 0.0:nnnp -s0 -w/var/tmp/hackazon.pcap host 10.1.20.103
 
 #. After starting the capture, start Chrome and click on the Hackazon bookmark.  Browse around the site following a couple links.  Next go to the address bar and type in: "https://hackazon.f5demo.com:8080".  Then stop the capture in the putty session by using 'Ctrl+c'.
 
 #. Open WinSCP on the Windows jumpbox.  Download the hackazon.pcap file to the local box.
 
-#. You may be prompted to save the SSH keys. Click yes.
-
 #. Now open Wireshark and open the hackazon.pcap file you just copied from the F5.
 
-#. If you run into issues copying the hackazon.pcap file to the jumpbox you can use the already created file in the Downloads folder hackazon2.pcap.
+#. If you run into issues copying the hackazon.pcap file to the jumpbox you can use the already created file in the My Documents folder hackazon2.pcap.
