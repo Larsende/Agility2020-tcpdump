@@ -25,7 +25,7 @@ High Details and Other Field Dissectors
 
 #. In order to see how the other field dissectors becomes useful, enter a display filter of 'ip.addr==10.1.10.31'.
 
-#. Notice that the Source and Destination fields in the results do not contain the ip address of 10.1.10.31 as shown in the image.  In the lab you won't see the IP 10.1.10.31 in the source or destination fields.
+#. Notice that some of the Source and Destination fields in the results do not contain the ip address of 10.1.10.31.  Select one of the packets that does not have 10.1.10.31 as the source or destination like below.
 
    .. image:: /_static/disect-high.png
       :scale: 50 %
